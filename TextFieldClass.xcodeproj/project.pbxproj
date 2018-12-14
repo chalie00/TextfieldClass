@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		21A3820F21C3762F00F39BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3820E21C3762F00F39BB7 /* AppDelegate.swift */; };
-		21A3821121C3762F00F39BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3821021C3762F00F39BB7 /* ViewController.swift */; };
+		21A3821121C3762F00F39BB7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3821021C3762F00F39BB7 /* MainVC.swift */; };
 		21A3821421C3762F00F39BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3821221C3762F00F39BB7 /* Main.storyboard */; };
 		21A3821621C3763100F39BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A3821521C3763100F39BB7 /* Assets.xcassets */; };
 		21A3821921C3763100F39BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3821721C3763100F39BB7 /* LaunchScreen.storyboard */; };
 		21A3822421C3763100F39BB7 /* TextFieldClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3822321C3763100F39BB7 /* TextFieldClassTests.swift */; };
 		21A3822F21C3763100F39BB7 /* TextFieldClassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3822E21C3763100F39BB7 /* TextFieldClassUITests.swift */; };
+		21A3824321C379A300F39BB7 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3824221C379A300F39BB7 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		21A3820B21C3762F00F39BB7 /* TextFieldClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3820E21C3762F00F39BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21A3821021C3762F00F39BB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21A3821021C3762F00F39BB7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		21A3821321C3762F00F39BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21A3821521C3763100F39BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21A3821821C3763100F39BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		21A3822A21C3763100F39BB7 /* TextFieldClassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldClassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3822E21C3763100F39BB7 /* TextFieldClassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClassUITests.swift; sourceTree = "<group>"; };
 		21A3823021C3763100F39BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A3824221C379A300F39BB7 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		21A3820D21C3762F00F39BB7 /* TextFieldClass */ = {
 			isa = PBXGroup;
 			children = (
+				21A3823C21C378C200F39BB7 /* Control */,
+				21A3823D21C378CA00F39BB7 /* View */,
 				21A3820E21C3762F00F39BB7 /* AppDelegate.swift */,
-				21A3821021C3762F00F39BB7 /* ViewController.swift */,
 				21A3821221C3762F00F39BB7 /* Main.storyboard */,
 				21A3821521C3763100F39BB7 /* Assets.xcassets */,
 				21A3821721C3763100F39BB7 /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				21A3823021C3763100F39BB7 /* Info.plist */,
 			);
 			path = TextFieldClassUITests;
+			sourceTree = "<group>";
+		};
+		21A3823C21C378C200F39BB7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				21A3821021C3762F00F39BB7 /* MainVC.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		21A3823D21C378CA00F39BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21A3824221C379A300F39BB7 /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A3821121C3762F00F39BB7 /* ViewController.swift in Sources */,
+				21A3824321C379A300F39BB7 /* CurrencyTextField.swift in Sources */,
+				21A3821121C3762F00F39BB7 /* MainVC.swift in Sources */,
 				21A3820F21C3762F00F39BB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
