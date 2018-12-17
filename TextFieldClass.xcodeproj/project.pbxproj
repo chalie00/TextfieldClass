@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213CBC5621C78AB400BB0DE4 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CBC5521C78AB400BB0DE4 /* Wage.swift */; };
 		21A3820F21C3762F00F39BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3820E21C3762F00F39BB7 /* AppDelegate.swift */; };
 		21A3821121C3762F00F39BB7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3821021C3762F00F39BB7 /* MainVC.swift */; };
 		21A3821421C3762F00F39BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3821221C3762F00F39BB7 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		213CBC5521C78AB400BB0DE4 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		21A3820B21C3762F00F39BB7 /* TextFieldClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3820E21C3762F00F39BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21A3821021C3762F00F39BB7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213CBC5021C785C700BB0DE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				213CBC5521C78AB400BB0DE4 /* Wage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		21A3820221C3762F00F39BB7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		21A3820D21C3762F00F39BB7 /* TextFieldClass */ = {
 			isa = PBXGroup;
 			children = (
+				213CBC5021C785C700BB0DE4 /* Model */,
 				21A3823C21C378C200F39BB7 /* Control */,
 				21A3823D21C378CA00F39BB7 /* View */,
 				21A3820E21C3762F00F39BB7 /* AppDelegate.swift */,
@@ -276,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21A3824321C379A300F39BB7 /* CurrencyTextField.swift in Sources */,
+				213CBC5621C78AB400BB0DE4 /* Wage.swift in Sources */,
 				21A3821121C3762F00F39BB7 /* MainVC.swift in Sources */,
 				21A3820F21C3762F00F39BB7 /* AppDelegate.swift in Sources */,
 			);

@@ -23,7 +23,7 @@ class CurrencyTextField: UITextField {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        customizeView() 
+        customizeView()
     }
     
     
