@@ -10,13 +10,20 @@
 
 import UIKit
 
+@IBDesignable //StoryBoard에 변경 점을 렌더링 없이 바로 보여준다.
+//http://minsone.github.io/mac/ios/how-to-live-coding-using-ibdesignable-and-ibinspectable-in-swift
+
 class CurrencyTextField: UITextField {
 
+    
+    override func prepareForInterfaceBuilder() {
+        customizeView()
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        customizeView()
-        
+        customizeView() 
     }
     
     
@@ -34,5 +41,8 @@ class CurrencyTextField: UITextField {
         }
 
     }
+    
+    
 
-}
+}// End Of The Class
+
